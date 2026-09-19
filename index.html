@@ -22,7 +22,7 @@
 <script>
 const captions=['My Beautiful Betu ❤️','My Smile ❤️','My Angel ❤️','My Cutie ❤️','My Little Doll ❤️','My Strength ❤️','Your Eyes, My Universe ❤️','Your Smile, My Peace ❤️','Your Presence, My Happiness ❤️','You… My Everything ❤️','Beautiful You ❤️','Sweetest Memory ❤️','My Favourite Person ❤️','A Moment To Remember ❤️','Always You ❤️','Our Memory ❤️','Us ❤️','Forever Together ❤️','My Favourite Photo ❤️','You & Me ❤️'];
 const gallery=document.getElementById('gallery');
-for(let i=1;i<=20;i++){let c=document.createElement('div');c.className='card';c.innerHTML=`<img loading="lazy" src="assets/photo-${String(i).padStart(2,'0')}.jpg" alt="Memory ${i}"><small>${captions[i-1]}</small>`;gallery.appendChild(c)}
+for(let i=1;i<=20;i++){let c=document.createElement('div');c.className='card';c.innerHTML=`<img loading="lazy" src="photo-${String(i).padStart(2,'0')}.jpg" alt="Memory ${i}"><small>${captions[i-1]}</small>`;gallery.appendChild(c)}
 for(let i=0;i<16;i++){let h=document.createElement('div');h.className='heart';h.textContent='♥';h.style.left=Math.random()*100+'%';h.style.animationDelay=(Math.random()*6)+'s';h.style.fontSize=(12+Math.random()*20)+'px';document.body.appendChild(h)}
-function toggleMusic(){alert('Music button ready ❤️ Add your own MP3 as assets/music.mp3 and connect it in the HTML if you want background music.')} 
+function toggleMusic(){alert('Music button ready ❤️ Add your own MP3 as music.mp3 and connect it in the HTML if you want background music.')} 
 </script></body></html>
